@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <i class="fas fa-bars menu-icon"></i>
+        <button class="plus-button">Dapatkan Plus <i class="fas fa-star"></i></button>
+        <i class="fas fa-ellipsis-v more-icon"></i>
+    </div>
+
+    <!-- Konten Chat -->
+    <div class="content">
+        <h1>Apa yang bisa saya bantu?</h1>
+        <div class="buttons">
+            <button class="button green" onclick="handleResponse('gambar')"><i class="fas fa-image"></i> Buat gambar</button>
+            <button class="button blue" onclick="handleResponse('analisis')"><i class="fas fa-eye"></i> Analisis gambar</button>
+            <button class="button" onclick="handleResponse('nasihat')"><i class="fas fa-graduation-cap"></i> Dapatkan nasihat</button>
+            <button class="button" onclick="handleResponse('lainnya')"><i class="fas fa-ellipsis-h"></i> Lainnya</button>
+        </div>
+    </div>
+
+    <!-- Footer Chat Input -->
+    <div class="footer">
+        <i class="fas fa-camera icon"></i>
+        <i class="fas fa-image icon"></i>
+        <i class="fas fa-folder icon"></i>
+        <div class="message-box">
+            <input type="text" id="userInput" placeholder="Ketik pesan Anda...">
+            <i class="fas fa-microphone" onclick="simulateResponse()"></i>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
